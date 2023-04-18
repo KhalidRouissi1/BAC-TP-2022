@@ -1,0 +1,10 @@
+
+
+
+def triMin(x):
+    if len(x)==0:
+        return ""
+    else:
+        return x[len(x)-1] + triMin(x[0:len(x)-1]) 
+
+print(triMin("123"))
